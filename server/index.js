@@ -9,7 +9,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
 import { error } from "console";
-
+import { register } from "./controllers/auth.js";
 /**
  * Configuration of middleware
  */
@@ -40,6 +40,9 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+
+/**Routes with file */
+app.post("/auth/register", upload.single("picture"), register);
 
 /**
  * Setting Mongoose
