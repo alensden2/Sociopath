@@ -34,6 +34,10 @@ import "./index.css";
  * ones listed under the ignoredActions array: FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, and REGISTER.
  * Finally, the Redux store is exported as store and can be used in the application to manage global state.
  */
+
+/**
+ * docs
+ */
 const persistConfig = { key: "root", storage, version: 1 };
 const persistedReducer = persistReducer(persistConfig, authReducer);
 const store = configureStore({
