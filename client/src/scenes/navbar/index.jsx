@@ -15,6 +15,8 @@ import { Search, Message, DarkMode, LightMode, Notifications, Help, Menu, Close 
 
 import { useDispatch, useSelector } from "react-redux";
 import { setLogin, setLogout } from "state";
+import { useNavigate } from "react-router-dom";
+import FlexBetween from "components/FlexBetween";
 
 const NavBar = () => {
   return (
