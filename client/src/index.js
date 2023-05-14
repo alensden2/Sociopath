@@ -16,6 +16,8 @@ import { PersistGate } from "redux-persist/integration/react";
 import storage from "redux-persist/lib/storage";
 import App from "./App";
 import "./index.css";
+import authReducer from "./state";
+
 
 /**
  * This is a code block that configures and creates a Redux store using the configureStore

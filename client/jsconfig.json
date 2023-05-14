@@ -1,7 +1,6 @@
 {
-    "compilerOptions": {
-      "baseUrl": "src"
-    },
-    "include": ["src"]
-  }
-// now all imports can be referenced from src, eazy to understand   
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
